@@ -57,10 +57,10 @@ The dataset for this project comprises six types of audio samples: command instr
 The preprocessing steps included:
 
 1. **Sample Clipping:** Cutting out segments containing a keyword from longer audio files to ensure each clip contains only one clear command or noise.
-   ![Sample Clipping](https://github.com/grandy0831/DL4SN-Voice-Controlled-Gluttonous-snake/assets/140076679/2c1f3581-3f2e-4ab9-afcc-e55bacbca24e)
+<br><br>![Sample Clipping](https://github.com/grandy0831/DL4SN-Voice-Controlled-Gluttonous-snake/assets/140076679/2c1f3581-3f2e-4ab9-afcc-e55bacbca24e)
 
 2. **Audio Cleaning:** Manually removing audio clips with poor quality or recording errors.
-   ![Audio Cleaning](https://github.com/grandy0831/DL4SN-Voice-Controlled-Gluttonous-snake/assets/140076679/66cb1939-6b8c-4593-b812-964fbef1c9e2)
+<br><br>![Audio Cleaning](https://github.com/grandy0831/DL4SN-Voice-Controlled-Gluttonous-snake/assets/140076679/66cb1939-6b8c-4593-b812-964fbef1c9e2)
 
 3. **Duration Standardization:** All audio clips were processed to uniform length to maintain consistency during feature extraction.
 4. **Label Annotation:** Each audio clip was accurately labelled to ensure precise correspondence between training data and labels.
@@ -68,7 +68,7 @@ The preprocessing steps included:
 ### Dataset Construction
 
 Approximately 300 samples per command were collected as raw data. Using the Edge Impulse platform, this data was automatically divided into an 80% training set and a 20% testing set. This division ratio helps the model learn sufficient features while retaining enough data to validate the model's generalization ability.
-![Dataset Construction](https://github.com/grandy0831/DL4SN-Voice-Controlled-Gluttonous-snake/assets/140076679/4267c6ea-d3b3-4813-8818-55cffe2246ae)
+<br><br>![Dataset Construction](https://github.com/grandy0831/DL4SN-Voice-Controlled-Gluttonous-snake/assets/140076679/4267c6ea-d3b3-4813-8818-55cffe2246ae)
 
 
 ### Feature Extraction
