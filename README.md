@@ -77,9 +77,27 @@ Mel Frequency Cepstral Coefficients (MFCC) techniques were employed to extract f
 
 
 ## Model
-This is a Deep Learning project! What model architecture did you use? Did you try different ones? Why did you choose the ones you did?
 
-*Tip: probably ~200 words and a diagram is usually good to describe your model!*
+### Overview of the Model
+
+This project employs deep learning techniques for the classification and recognition of audio signals. To enhance the model's performance and adapt it to different application scenarios, three distinct network architectures were experimented with:
+
+1. **One-Dimensional Convolutional Neural Network (1D-CNN):** Designed for one-dimensional temporal data, this architecture effectively extracts temporal features from audio signals by applying filters along the time axis, making it suitable for real-time processing of lengthy audio streams.
+2. **Two-Dimensional Convolutional Neural Network (2D-CNN):** Primarily used for processing two-dimensional spatial data, such as images and spectrograms. In this project, audio signals are transformed into spectrograms, which are then processed by 2D-CNNs to capture the frequency domain features of the audio.
+3. **Transfer Learning (MobileNetV2):** Utilizes the pre-trained MobileNetV2 model to leverage knowledge learned on large-scale datasets, enhancing the model's generalization ability and performance.
+
+### Model Comparison and Selection
+
+- **Data Characteristics:** Given the temporal features of audio data, 1D-CNNs naturally excel in processing time-series data.
+- **Computational Efficiency:** Experimental results show that 1D-CNNs have much faster inference times compared to 2D-CNNs and MobileNetV2, which is crucial for scenarios requiring quick responses.
+- **Resource Utilization:** 1D-CNNs consume less peak RAM compared to 2D-CNNs and MobileNetV2, demonstrating higher applicability on resource-constrained devices.
+- **Performance Comparison:** Although 1D-CNNs and 2D-CNNs are similar in accuracy, 1D-CNNs offer significant advantages in inference speed and resource usage. While MobileNetV2 offers higher accuracy, its longer inference times and greater resource demands limit its application in latency-sensitive and resource-constrained environments.
+
+![Model Comparison Chart](https://github.com/grandy0831/DL4SN-Voice-Controlled-Gluttonous-snake/assets/140076679/ece9cb96-4b2f-452c-aa03-2a57bacc9f74)
+
+
+Considering all these factors, especially the real-time requirements and resource constraints of the project, the 1D-CNN was chosen as the final model architecture for efficiently handling real-time audio processing tasks.
+
 
 ## Experiments
 What experiments did you run to test your project? What parameters did you change? How did you measure performance? Did you write any scripts to evaluate performance? Did you use any tools to evaluate performance? Do you have graphs of results? 
