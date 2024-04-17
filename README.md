@@ -1,4 +1,5 @@
-# Report title goes here
+# Voice-Controlled Gluttonous snake
+
 
 Name of author, link to github repo with project work in / link to Edge Impulse projects
 
