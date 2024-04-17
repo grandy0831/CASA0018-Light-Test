@@ -8,11 +8,18 @@
 
 
 ## Introduction
-- an overview of what the project does
-- your inspiration for making the project 
-- examples that it is based on. 
 
-*Tip: probably ~200 words and images are good!*
+This project aims to develop a voice-controlled system for the classic game Snake. With the rapid development of the Internet of Things (IoT) and smart home technologies, voice interaction is becoming an integral and efficient mode of everyday interaction. Inspired by trends in modern interactive technologies, this project explores the potential of voice recognition in game control by enabling directional commands such as "up," "down," "left," and "right" to manipulate game movements.
+
+The game control system captures the player's voice commands through an integrated microphone, processes and recognizes them in real-time, and translates them into movement controls within the game. This interaction allows the player to seamlessly control the game using voice alone, without the need for physical controllers, creating a new gaming experience.
+
+### Key Inspiration:
+1. **Smart Assistants**: The everyday use of devices like Alexa and Google Home reflects the reliability and user-friendliness of voice-controlled systems.
+2. **Voice Recognition in Apps**: Mobile applications utilizing voice commands are becoming commonplace, demonstrating the technology's versatility.
+3. **Accessible Gaming**: The concept of making gaming accessible to everyone, regardless of physical capability, showcases the profound impact of inclusive design principles.
+
+Through this project, I hope to explore the wider use of speech technology in entertainment and open up new possibilities for accessible game design.
+
 
 ## Research Question
 What is the problem you are trying to solve
