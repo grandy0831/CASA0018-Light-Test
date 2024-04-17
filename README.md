@@ -31,9 +31,20 @@ In addition, the project will investigate the feasibility and performance optimi
 
 
 ## Application Overview
-Thinking back to the various application diagrams you have seen through the module - how would you describe an overview of the building blocks of your project - how do they connect, what do the component parts include.
 
-*Tip: probably ~200 words and a diagram is usually good to convey your design!*
+This project develops a voice-controlled Snake game that consists of several key components:
+
+- **Voice Recognition Module:** This module collects audio through a microphone, capturing short commands such as "up," "down," "left," and "right," along with background noise and non-command sounds.
+- **Data Preprocessing and Feature Extraction:** This involves processing the audio data to clip effective commands and extracting sound features using techniques like Mel Frequency Cepstral Coefficients (MFCC).
+- **Deep Learning Model Training and Evaluation:** Utilizes various network architectures, such as 1D-CNN, on the Edge Impulse platform to train and evaluate models, aiming to improve recognition accuracy and response speed.
+- **Command Execution Interface:** Deploys the trained model onto an embedded device (e.g., Arduino) and performs real-time recognition of user commands to control the direction of the Snake game.
+
+The design focuses on model light-weighting and inference speed optimization to adapt to the computational capabilities of embedded devices while ensuring the smoothness and interactivity of the game experience.
+
+**[Architecture Diagram: Project Structure]**  
+![Architecture Diagram](URL_TO_DIAGRAM_IMAGE)
+
+
 
 ## Data
 Describe what data sources you have used and any cleaning, wrangling or organising you have done. Including some examples of the data helps others understand what you have been working with.
