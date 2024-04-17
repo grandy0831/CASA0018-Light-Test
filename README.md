@@ -93,7 +93,7 @@ This project employs deep learning techniques for the classification and recogni
 - **Resource Utilization:** 1D-CNNs consume less peak RAM compared to 2D-CNNs and MobileNetV2, demonstrating higher applicability on resource-constrained devices.
 - **Performance Comparison:** Although 1D-CNNs and 2D-CNNs are similar in accuracy, 1D-CNNs offer significant advantages in inference speed and resource usage. While MobileNetV2 offers higher accuracy, its longer inference times and greater resource demands limit its application in latency-sensitive and resource-constrained environments.
 
-![Model Comparison Chart](https://github.com/grandy0831/DL4SN-Voice-Controlled-Gluttonous-snake/assets/140076679/ece9cb96-4b2f-452c-aa03-2a57bacc9f74)
+![Model Comparison Chart](https://github.com/grandy0831/DL4SN-Voice-Controlled-Gluttonous-snake/assets/140076679/b0a0d3fa-78e8-4f21-acac-23be5878bd6c)
 
 
 Considering all these factors, especially the real-time requirements and resource constraints of the project, the 1D-CNN was chosen as the final model architecture for efficiently handling real-time audio processing tasks.
