@@ -100,9 +100,58 @@ Considering all these factors, especially the real-time requirements and resourc
 
 
 ## Experiments
-What experiments did you run to test your project? What parameters did you change? How did you measure performance? Did you write any scripts to evaluate performance? Did you use any tools to evaluate performance? Do you have graphs of results? 
 
-*Tip: probably ~300 words and graphs and tables are usually good to convey your results!*
+### Overview
+
+To assess the model's performance under different configurations, we adjusted the following parameters: number of epochs, learning rate, dropout, and the neural network architecture. Specific experimental setups included:
+
+#### 1. Epoch Adjustment
+- **Objective:** Analyze the impact of training duration on model accuracy and overfitting.
+- **Methodology:** Trained the model from 20 to 400 epochs, monitoring accuracy and loss to find the optimal number to prevent overfitting and maximize performance.
+
+#### 2. Learning Rate Adjustment
+- **Objective:** Evaluate how different learning rates affect training efficiency and final model performance.
+- **Methodology:** Varied learning rates from 0.001 to 0.02 to find the rate that provided the highest test accuracy while maintaining process stability.
+
+#### 3. Dropout Ratio Adjustment
+- **Objective:** Determine how different dropout settings impact the model’s overfitting prevention and accuracy.
+- **Methodology:** Tested dropout ratios from 0.10 to 0.45 to assess their effects on model performance and identify the optimal ratio.
+
+#### 4. Neural Network Architecture Comparison
+- **Objective:** Compare the performance impacts of various neural network configurations, especially changes in neuron counts and layers.
+- **Methodology:** Evaluated everything from simple single-layer architectures to complex multi-layer setups on accuracy, loss, inference time, and resource usage.
+
+### Experimental Results
+
+- **Epoch Effects:** Increasing epochs to 70 significantly improved training and test accuracies, indicating better learning. Training beyond 70 epochs provided diminishing returns, suggesting potential overfitting.
+  ![Epoch Effects](https://github.com/grandy0831/DL4SN-Voice-Controlled-Gluttonous-snake/assets/140076679/b5636559-7a80-470f-bd98-f45f48bb2a2c)
+
+
+- **Learning Rate Effects:** A learning rate of 0.005 optimized performance, achieving up to 87.88% accuracy, enhancing both learning efficiency and model performance.
+  ![Learning Rate Effects](https://github.com/grandy0831/DL4SN-Voice-Controlled-Gluttonous-snake/assets/140076679/4ce1ab75-8796-469b-a6d1-f8a7a86ded56)
+
+
+- **Dropout Effects:** A moderate dropout rate of 0.16 greatly enhanced test accuracy to 90.36%, effectively preventing overfitting.
+  ![Dropout Effects](https://github.com/grandy0831/DL4SN-Voice-Controlled-Gluttonous-snake/assets/140076679/f75c9fcf-008a-4895-906a-1b410c435e22)
+
+- **Neural Network Architecture Effects:** Multi-layer setups like the 1D conv (16-16-24 neurons) configuration increased complexity and capability, reaching a peak accuracy of 94.02%.
+  ![Architecture Effects](https://github.com/grandy0831/DL4SN-Voice-Controlled-Gluttonous-snake/assets/140076679/cc4ffc0d-d798-4c63-a04e-a6d656a7af32)
+
+
+### Final Model Configuration
+
+Considering both performance and resource efficiency, the optimal model configuration was established as follows:
+
+- **Neural Network Architecture:** 1D conv (16 neurons - 16 neurons - 24 neurons)
+- **Dropout Rate:** 0.16
+- **Learning Rate:** 0.005
+- **Epochs:** 70
+- **Test Accuracy:** 94.02%
+- **Inferencing Time:** 9 ms
+- **Peak RAM Usage:** 5.1K
+
+This setup not only ensures high accuracy but also maintains low resource use and quick inference times, ideal for real-time audio processing in the voice-controlled Gluttonous Snake game. Extensive testing across different parameters confirmed this configuration's superior performance, showcasing robust generalization capability and efficiency.
+
 
 ## Results and Observations
 Synthesis the main results and observations you made from building the project. Did it work perfectly? Why not? What worked and what didn't? Why? What would you do next if you had more time?  
