@@ -22,9 +22,13 @@ Through this project, I hope to explore the wider use of speech technology in en
 
 
 ## Research Question
-What is the problem you are trying to solve
 
-*Tip: probably 1 or 2 sentences*
+The core question of this project is:
+
+**"How can voice recognition technology be effectively applied to control the game Snake, enabling hands-free operation with response times and accuracy that meet the demands of real-time gameplay?"**
+
+In addition, the project will investigate the feasibility and performance optimization strategies for using deep learning models on resource-constrained embedded systems to process voice commands.
+
 
 ## Application Overview
 Thinking back to the various application diagrams you have seen through the module - how would you describe an overview of the building blocks of your project - how do they connect, what do the component parts include.
