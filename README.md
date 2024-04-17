@@ -1,7 +1,11 @@
-# Voice-Controlled Gluttonous snake
+# Voice-Controlled Gluttonous Snake
 
+**Author:** Guandi Chen
 
-Name of author, link to github repo with project work in / link to Edge Impulse projects
+**GitHub Repository:** [DL4SN-Voice-Controlled-Gluttonous-Snake](https://github.com/grandy0831/DL4SN-Voice-Controlled-Gluttonous-snake)
+
+**Edge Impulse Project:** [View Project](https://studio.edgeimpulse.com/studio/380405)
+
 
 ## Introduction
 - an overview of what the project does
