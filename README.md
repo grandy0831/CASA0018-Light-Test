@@ -47,9 +47,34 @@ The design focuses on model light-weighting and inference speed optimization to 
 
 
 ## Data
-Describe what data sources you have used and any cleaning, wrangling or organising you have done. Including some examples of the data helps others understand what you have been working with.
 
-*Tip: probably ~200 words and images of what the data 'looks like' are good!*
+### Data Collection
+
+The dataset for this project comprises six types of audio samples: command instructions ("up," "down," "left," "right"), "unknown" (random words), and "noise" (various background noises). Command samples were collected using smartphone microphones from 15 participants of diverse nationalities, genders, ages, and accents to enhance dataset diversity and improve the model's generalization capabilities. "Unknown" and "noise" samples were sourced from Edge Impulse's keyword spotting audio sample library (Edge Impulse, 2023a).
+
+### Data Preprocessing
+
+The preprocessing steps included:
+
+1. **Sample Clipping:** Cutting out segments containing a keyword from longer audio files to ensure each clip contains only one clear command or noise.
+   ![Sample Clipping](https://github.com/grandy0831/DL4SN-Voice-Controlled-Gluttonous-snake/assets/140076679/2c1f3581-3f2e-4ab9-afcc-e55bacbca24e)
+
+2. **Audio Cleaning:** Manually removing audio clips with poor quality or recording errors.
+   ![Audio Cleaning](https://github.com/grandy0831/DL4SN-Voice-Controlled-Gluttonous-snake/assets/140076679/66cb1939-6b8c-4593-b812-964fbef1c9e2)
+
+3. **Duration Standardization:** All audio clips were processed to uniform length to maintain consistency during feature extraction.
+4. **Label Annotation:** Each audio clip was accurately labelled to ensure precise correspondence between training data and labels.
+
+### Dataset Construction
+
+Approximately 300 samples per command were collected as raw data. Using the Edge Impulse platform, this data was automatically divided into an 80% training set and a 20% testing set. This division ratio helps the model learn sufficient features while retaining enough data to validate the model's generalization ability.
+![Dataset Construction](https://github.com/grandy0831/DL4SN-Voice-Controlled-Gluttonous-snake/assets/140076679/4267c6ea-d3b3-4813-8818-55cffe2246ae)
+
+
+### Feature Extraction
+
+Mel Frequency Cepstral Coefficients (MFCC) techniques were employed to extract features from the audio. MFCC is extensively used in audio signal processing, particularly suitable for capturing qualitative characteristics of speech and music. It simulates the auditory perception of human ears, effectively capturing the short-term energy variations and spectral structure of audio signals, making it the preferred feature for sound recognition tasks(M. Rammo and N. Al-Hamdani, 2022).
+
 
 ## Model
 This is a Deep Learning project! What model architecture did you use? Did you try different ones? Why did you choose the ones you did?
