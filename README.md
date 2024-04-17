@@ -2,9 +2,9 @@
 
 **Author:** Guandi Chen
 
-**GitHub Repository:** [DL4SN-Voice-Controlled-Gluttonous-Snake](https://github.com/grandy0831/DL4SN-Voice-Controlled-Gluttonous-snake)
+**GitHub Repository:** [https://github.com/grandy0831/DL4SN-Voice-Controlled-Gluttonous-snake](https://github.com/grandy0831/DL4SN-Voice-Controlled-Gluttonous-snake)
 
-**Edge Impulse Project:** [View Project](https://studio.edgeimpulse.com/studio/380405)
+**Edge Impulse Project:** [https://studio.edgeimpulse.com/studio/380405](https://studio.edgeimpulse.com/studio/380405)
 
 
 ## Introduction
