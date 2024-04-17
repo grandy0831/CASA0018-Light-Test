@@ -134,23 +134,20 @@ To assess the model's performance under different configurations, we adjusted th
 - **Dropout Effects:** A moderate dropout rate of 0.16 greatly enhanced test accuracy to 90.36%, effectively preventing overfitting.
   ![Dropout Effects](https://github.com/grandy0831/DL4SN-Voice-Controlled-Gluttonous-snake/assets/140076679/f75c9fcf-008a-4895-906a-1b410c435e22)
 
-- **Neural Network Architecture Effects:** Multi-layer setups like the 1D conv (16-16-24 neurons) configuration increased complexity and capability, reaching a peak accuracy of 94.02%.
+- **Neural Network Architecture Effects:** Multi-layer configurations (1D conv (16-16-24 neurons)) excelled in increasing model complexity and capability, with the highest accuracy reaching 94.02%.
+
   ![Architecture Effects](https://github.com/grandy0831/DL4SN-Voice-Controlled-Gluttonous-snake/assets/140076679/cc4ffc0d-d798-4c63-a04e-a6d656a7af32)
 
 
 ### Final Model Configuration
 
-Considering both performance and resource efficiency, the optimal model configuration was established as follows:
+Considering both performance and resource efficiency, the final model configuration was determined as follows:
 
-- **Neural Network Architecture:** 1D conv (16 neurons - 16 neurons - 24 neurons)
-- **Dropout Rate:** 0.16
-- **Learning Rate:** 0.005
-- **Epochs:** 70
-- **Test Accuracy:** 94.02%
-- **Inferencing Time:** 9 ms
-- **Peak RAM Usage:** 5.1K
+<br><br>![Model](https://github.com/grandy0831/DL4SN-Voice-Controlled-Gluttonous-snake/assets/140076679/c203b690-1860-4c62-aa55-77e277749a49)
 
-This setup not only ensures high accuracy but also maintains low resource use and quick inference times, ideal for real-time audio processing in the voice-controlled Gluttonous Snake game. Extensive testing across different parameters confirmed this configuration's superior performance, showcasing robust generalization capability and efficiency.
+
+This configuration ensured high accuracy (Test Accuracy: 94.02%) while maintaining low resource consumption and fast inference times, making it highly suitable for the real-time audio processing needs of my voice-controlled Gluttonous Snake game. Extensive testing of model performance under different parameter configurations showed that this setup offered the best performance, demonstrating excellent generalisation ability and efficiency.
+
 
 
 ## Results and Observations
