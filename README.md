@@ -41,8 +41,8 @@ This project develops a voice-controlled Snake game that consists of several key
 
 The design focuses on model light-weighting and inference speed optimization to adapt to the computational capabilities of embedded devices while ensuring the smoothness and interactivity of the game experience.
 
-**[Architecture Diagram: Project Structure]**  
-![Architecture Diagram](URL_TO_DIAGRAM_IMAGE)
+<br><br>![Architecture Diagram]<https://github.com/grandy0831/DL4SN-Voice-Controlled-Gluttonous-snake/assets/140076679/aa66579e-b67a-47b2-8369-aced552f9521>
+
 
 
 
@@ -151,9 +151,8 @@ This configuration ensured high accuracy (Test Accuracy: 94.02%) while maintaini
 
 
 ## Results and Observations
-Synthesis the main results and observations you made from building the project. Did it work perfectly? Why not? What worked and what didn't? Why? What would you do next if you had more time?  
 
-*Tip: probably ~300 words and remember images and diagrams bring results to life!*
+
 
 ## Bibliography
 *If you added any references then add them in here using this format:*
