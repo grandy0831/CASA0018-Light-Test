@@ -302,64 +302,64 @@ void update_snake_position() {
         new_x = (new_x + 1) % 8;
     }
 
-    // 检查自身碰撞
+    // Self-checking collision
     for (int i = 1; i < snake.length; i++) {
         if (snake.x[i] == new_x && snake.y[i] == new_y) {
             Serial.println("Game Over: Collided with itself!");
-            setup();  // 重置游戏
+            setup();  
             return;
         }
     }
 
-    // 移动蛇身
+    // Moving snake body
     for (int i = snake.length - 1; i > 0; i--) {
         snake.x[i] = snake.x[i-1];
         snake.y[i] = snake.y[i-1];
     }
 
-    // 更新蛇头位置
+    // Update snake head location
     snake.x[0] = new_x;
     snake.y[0] = new_y;
 
-    // 检查是否吃到苹果
+    // Check to see if you have an apple
     if (new_x == apple.x && new_y == apple.y) {
         if (snake.length < MAX_SNAKE_LENGTH) {
-            // 增加蛇的长度
+            // Increase the length of the snake
             snake.length++;
             snake.x[snake.length - 1] = snake.x[snake.length - 2];
             snake.y[snake.length - 1] = snake.y[snake.length - 2];
         }
-        place_apple();  // 放置新苹果
+        place_apple();  // Place a new Apple
     }
 
-    lc.clearDisplay(0);  // 清屏
+    lc.clearDisplay(0);  
     for (int i = 0; i < snake.length; i++) {
-        lc.setLed(0, snake.y[i], snake.x[i], true);  // 重新绘制蛇
+        lc.setLed(0, snake.y[i], snake.x[i], true);  // Redraw the snake
     }
-    lc.setLed(0, apple.y, apple.x, true);  // 确保苹果也被重新绘制
+    lc.setLed(0, apple.y, apple.x, true);  
 }
 
 
 
 
 void place_apple() {
-    lc.clearDisplay(0);  // 清除显示，准备放置新的苹果
+    lc.clearDisplay(0);  
     bool apple_placed = false;
     while (!apple_placed) {
-        apple.x = random(8);  // 在0到7之间生成一个随机x坐标
-        apple.y = random(8);  // 在0到7之间生成一个随机y坐标
+        apple.x = random(8);  
+        apple.y = random(8);  
 
         apple_placed = true;
         for (int i = 0; i < snake.length; i++) {
             if (snake.x[i] == apple.x && snake.y[i] == apple.y) {
-                apple_placed = false;  // 如果苹果生成在蛇身上，重新生成
+                apple_placed = false;  // If the apple is generated on the snake, regenerate it
                 break;
             }
         }
     }
-    lc.setLed(0, apple.y, apple.x, true);  // 在新位置显示苹果
+    lc.setLed(0, apple.y, apple.x, true);  // Show Apple in new location
 
-    // 重新绘制蛇，因为清屏会清除蛇的显示
+    // Redraw the snake, because the clear screen will clear the snake display
     for (int i = 0; i < snake.length; i++) {
         lc.setLed(0, snake.y[i], snake.x[i], true);
     }
