@@ -41,7 +41,7 @@ This project develops a voice-controlled Snake game that consists of several key
 
 The design focuses on model light-weighting and inference speed optimization to adapt to the computational capabilities of embedded devices while ensuring the smoothness and interactivity of the game experience.
 
-<br><br>![Architecture Diagram]<https://github.com/grandy0831/DL4SN-Voice-Controlled-Gluttonous-snake/assets/140076679/aa66579e-b67a-47b2-8369-aced552f9521>
+<br><br>![Architecture Diagram](https://github.com/grandy0831/DL4SN-Voice-Controlled-Gluttonous-snake/assets/140076679/aa66579e-b67a-47b2-8369-aced552f9521)
 
 
 
