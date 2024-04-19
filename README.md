@@ -172,7 +172,7 @@ Faster speech rates had the highest accuracy (87%), reflecting typical command s
 ### 4. Distance Challenges
 System performance degrades as the distance increases from 0.1 meters (accuracy 92%) to 1 meter (accuracy 82%) (Figure 14). This trend illustrates the challenges of capturing and processing attenuated audio signals as distance increases.
 
-![Figure 14. Distance test records](img width="454" alt="image" src="https://github.com/grandy0831/DL4SN-Voice-Controlled-Gluttonous-snake/assets/140076679/efa83563-b454-4635-b467-ddc2a9a91f82")
+![Figure 14. Distance test records](https://github.com/grandy0831/DL4SN-Voice-Controlled-Gluttonous-snake/assets/140076679/efa83563-b454-4635-b467-ddc2a9a91f82)
 
 ### 5. Noise Environment
 Surprisingly, moderate background noise (45 dB to 69 dB) improved recognition accuracy, peaking at 99% for human voices at 45 dB (Figure 15). However, high-intensity noise (75 dB), particularly from construction environments, severely impacted accuracy (dropping to 59%), illustrating the limits of the system's noise handling capabilities. Moderate background noise can help improve recognition accuracy, but excessive noise sources must be avoided.
