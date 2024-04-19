@@ -152,6 +152,43 @@ This configuration ensured high accuracy (Test Accuracy: 94.02%) while maintaini
 
 ## Results and Observations
 
+In this project, the deep learning model was successfully deployed on Arduino Nano 33 BLE, and the performance of the voice-controlled Snake game on physical devices was explored. The model can receive voice commands through the microphone and respond accurately in less than half a second, converting them into game control commands. Additionally, five experiments were conducted to evaluate the impact of different factors on system performance: accuracy, sound level, speaking speed, distance, and noise environment.
+
+### 1. Accuracy Tests
+Testing with new users who were not part of the training dataset, the model demonstrated strong generalisation abilities with overall accuracies between 85% to 87% (Figure 11). Commands "right" and "left" achieved higher recognition accuracies (above 92%) due to their distinct syllable structures and clearer pronunciations, while "up" and "down" commands showed lower accuracies, which may be attributed to their monosyllabic nature that could lead to less distinct vocal representations.
+
+![Figure 11. Accuracy test records](https://github.com/grandy0831/DL4SN-Voice-Controlled-Gluttonous-snake/assets/140076679/8be4e1d2-7ac3-40b7-9688-520749b2ad80)
+
+### 2. Sound Level Impact
+The model performed best at moderate sound levels (70 dB), where the accuracy peaked at 85%, including 98% for "right" direction commands (Figure 12). At higher levels (85 dB), accuracy dropped significantly to 67%, indicating that excessive volume might distort signal integrity or overwhelm the microphone's processing capabilities.
+
+![Figure 12. Sound Level test records](https://github.com/grandy0831/DL4SN-Voice-Controlled-Gluttonous-snake/assets/140076679/eae48801-d021-41f4-9a36-7ecec06930b5)
+
+### 3. Speaking Speed Effects
+Faster speech rates had the highest accuracy (87%), reflecting typical command speeds in gaming scenarios. Slow rates reduced overall accuracy to 81% (Figure 13), with significant drops for "down" and "left" commands, possibly due to vowel lengthening or changes in command dynamics.
+
+![Figure 13. Speaking Rate test records](https://github.com/grandy0831/DL4SN-Voice-Controlled-Gluttonous-snake/assets/140076679/c7329fd6-034f-481b-868c-39673af0968a)
+
+### 4. Distance Challenges
+System performance degrades as the distance increases from 0.1 meters (accuracy 92%) to 1 meter (accuracy 82%) (Figure 14). This trend illustrates the challenges of capturing and processing attenuated audio signals as distance increases.
+
+![Figure 14. Distance test records](img width="454" alt="image" src="https://github.com/grandy0831/DL4SN-Voice-Controlled-Gluttonous-snake/assets/140076679/efa83563-b454-4635-b467-ddc2a9a91f82")
+
+### 5. Noise Environment
+Surprisingly, moderate background noise (45 dB to 69 dB) improved recognition accuracy, peaking at 99% for human voices at 45 dB (Figure 15). However, high-intensity noise (75 dB), particularly from construction environments, severely impacted accuracy (dropping to 59%), illustrating the limits of the system's noise handling capabilities. Moderate background noise can help improve recognition accuracy, but excessive noise sources must be avoided.
+
+![Figure 15. Noise Environment test records](https://github.com/grandy0831/DL4SN-Voice-Controlled-Gluttonous-snake/assets/140076679/8cbedfd4-77e3-4167-a263-a00a24b7322e)
+
+## Reflections and Next Steps
+
+These experiments demonstrate the system's ability to effectively process real-time audio input, although the degree of success varies depending on environmental conditions. Potential improvements include:
+- **Command Modification:** Replace single-syllable commands such as "up" and "down" with more distinct, multi-syllable commands to enhance recognition accuracy.
+- **Adding Background Music:** Introducing appropriate background noise, such as music, can improve recognition accuracy while making the game more engaging.
+- **Game Mechanics Enhancement:** Improve the gaming experience by using larger displays or deploying the model on smartphones with game development software.
+
+These strategies not only aim to boost the model's performance and enhance user engagement but also provide a foundation for further research into accessible interactive games.
+
+
 
 
 ## Bibliography
