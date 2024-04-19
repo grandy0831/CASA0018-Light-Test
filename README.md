@@ -192,23 +192,26 @@ These strategies not only aim to boost the model's performance and enhance user 
 
 
 ## Bibliography
-*If you added any references then add them in here using this format:*
 
-1. Last name, First initial. (Year published). Title. Edition. (Only include the edition if it is not the first edition) City published: Publisher, Page(s). http://google.com
+1. 	Edge Impulse (2023a). Keyword spotting - Edge Impulse Documentation. [online] Edgeimpulse.com. Available at: https://docs.edgeimpulse.com/docs/pre-built-datasets/keyword-spotting [Accessed 8 Apr. 2024].
 
-2. Last name, First initial. (Year published). Title. Edition. (Only include the edition if it is not the first edition) City published: Publisher, Page(s). http://google.com
 
-*Tip: we use [https://www.citethisforme.com](https://www.citethisforme.com) to make this task even easier.* 
+2. Edge Impulse (2023b). Responding to your voice - Edge Impulse Documentation. [online] Edgeimpulse.com. Available at: https://docs.edgeimpulse.com/docs/tutorials/end-to-end-tutorials/responding-to-your-voice [Accessed 8 Apr. 2024].
+
+
+3.	Haque, M.A., Verma, A., Alex, J.S.R. and Venkatesan, N. (2019). Experimental Evaluation of CNN Architecture for Speech Recognition. First International Conference on Sustainable Technologies for Computational Intelligence, pp.507–514. doi:https://doi.org/10.1007/978-981-15-0029-9_40.
+
+4.	M. Rammo, F. and N. Al-Hamdani, M. (2022). Detecting The Speaker Language Using CNN Deep Learning Algorithm. Iraqi Journal for Computer Science and Mathematics, vol.3(no.1), pp.43–52. doi:https://doi.org/10.52866/ijcsm.2022.01.01.005.
 
 ----
 
 ## Declaration of Authorship
 
-I, AUTHORS NAME HERE, confirm that the work presented in this assessment is my own. Where information has been derived from other sources, I confirm that this has been indicated in the work.
+I, Guandi Chen, confirm that the work presented in this assessment is my own. Where information has been derived from other sources, I confirm that this has been indicated in the work.
 
 
-*Digitally Sign by typing your name here*
+*Guandi Chen*
 
-ASSESSMENT DATE
+2024.04.18
 
-Word count: 
+Word count: 1715
